@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f0d15">
+
+<title>哔咔漫画 PicACG - 随时随地，畅享漫画世界</title>
+
+<meta name="description" content="哔咔漫画（PicACG）客户端下载站，提供 Android / iOS / Windows 全平台版本，同步更新日志与历史版本。">
+<meta name="keywords" content="哔咔漫画,PicACG,漫画,客户端,下载,APK,更新日志">
+<meta name="author" content="哔咔漫画">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="哔咔漫画 PicACG - 随时随地，畅享漫画世界">
+<meta property="og:description" content="全平台漫画阅读客户端，海量图源，流畅体验。">
+<meta property="og:site_name" content="哔咔漫画">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#top">
+      <span class="nav__logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M6 8h13a5 5 0 0 1 0 10H9l-3 6V8Z"/>
+          <circle cx="23" cy="21" r="3.2"/>
+        </svg>
+      </span>
+      <span class="nav__title">哔咔漫画</span>
+      <span class="nav__ver" data-version>v0.0.0</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#features">功能特色</a>
+      <a href="#preview">界面预览</a>
+      <a href="#download">下载</a>
+      <a href="#changelog">更新日志</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+
+    <a class="btn btn--sm btn--primary nav__cta" href="#download">立即下载</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+
+      <div class="hero__text">
+        <div class="pill">
+          <span class="pill__dot"></span>
+          最新版本 <b data-version>v0.0.0</b>
+          <span class="pill__sep">·</span>
+          <span data-release-date>—</span>
+        </div>
+
+        <h1 class="hero__title">
+          随时随地<br>
+          <span class="grad">畅享漫画世界</span>
+        </h1>
+
+        <p class="hero__desc">
+          哔咔漫画客户端 —— 海量图源、极速加载、离线缓存、跨端同步。
+          支持 Android / iOS / Windows 全平台，为纯粹的阅读体验而生。
+        </p>
+
+        <div class="hero__actions" id="download">
+          <a class="btn btn--primary btn--lg" data-dl="android" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12v8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9Zm2.5-5.2 1 1.7a5.9 5.9 0 0 1 5 0l1-1.7.9.5-1 1.7A5 5 0 0 1 18 9H6a5 5 0 0 1 2.6-3l-1-1.7.9-.5ZM9.5 12v3M14.5 12v3"/></svg>
+            Android 版
+          </a>
+          <a class="btn btn--ghost btn--lg" data-dl="ios" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3c.1 1.2-.4 2.3-1.1 3.1-.7.8-1.9 1.4-3 1.3-.1-1.1.5-2.3 1.1-3C13.7 3.6 15 3 16 3Zm3.4 14.6c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.3 3.1-4 3.1-1.5 0-1.9-1-3.9-1s-2.5 1-4 1c-1.7 0-3-1.6-4-3C-.4 17.3-1 12.6.9 10c1-1.4 2.5-2.2 4-2.2 1.6 0 2.6 1 3.9 1 1.3 0 2-1 3.9-1 1.4 0 2.9.8 3.9 2.1-3.4 1.9-2.9 6.7.8 8.2Z"/></svg>
+            iOS 版
+          </a>
+          <a class="btn btn--ghost btn--lg" data-dl="windows" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.6 10.5 4.5v7.1H3V5.6Zm9.2-1.3L21 3v8.6h-8.8V4.3ZM3 12.9h7.5V20L3 18.9v-6Zm9.2 0H21V21l-8.8-1.3v-6.8Z"/></svg>
+            Windows 版
+          </a>
+        </div>
+
+        <ul class="hero__meta">
+          <li><b data-stat="version">v0.0.0</b><span>当前版本</span></li>
+          <li><b data-stat="size">—</b><span>安装包</span></li>
+          <li><b data-stat="platforms">3</b><span>支持平台</span></li>
+          <li><b data-stat="updated">—</b><span>最近更新</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__visual">
+        <div class="phone">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="phone__bar">
+              <span class="phone__dot"></span>
+              <span class="phone__lines"></span>
+            </div>
+            <div class="phone__grid">
+              <i style="--c:#ff6b9d"></i><i style="--c:#8b5cf6"></i>
+              <i style="--c:#22d3ee"></i><i style="--c:#f59e0b"></i>
+              <i style="--c:#34d399"></i><i style="--c:#f43f5e"></i>
+            </div>
+            <div class="phone__list">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="badge-float badge-float--1">极速加载</div>
+        <div class="badge-float badge-float--2">离线缓存</div>
+        <div class="badge-float badge-float--3">无广告</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 功能特色 ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">FEATURES</span>
+        <h2 class="section__title">为阅读体验而做的每一处细节</h2>
+        <p class="section__desc">从加载速度到阅读手势，从图源管理到离线下载，全部围绕「顺手」两个字打磨。</p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#ff6b9d">
+            <svg viewBox="0 0 24 24"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg>
+          </div>
+          <h3>极速加载</h3>
+          <p>多线程预加载 + 智能图片压缩，翻页几乎零等待，弱网环境下也能顺畅阅读。</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#8b5cf6">
+            <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          </div>
+          <h3>离线缓存</h3>
+          <p>整本批量下载，支持后台任务与断点续传。地铁、飞机上照样看到爽。</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#22d3ee">
+            <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9V3Z"/><path d="M14 2v7h7a8 8 0 0 0-7-7Z"/></svg>
+          </div>
+          <h3>多图源切换</h3>
+          <p>内置多条线路，可自定义图源与分流策略，某条线路异常时自动切换备用。</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#f59e0b">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/></svg>
+          </div>
+          <h3>阅读模式</h3>
+          <p>左右翻页 / 上下滚动 / 双页对开，亮度、间距、翻页动画均可自由调节。</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#34d399">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 3.5C19 16.6 12 21 12 21Z"/></svg>
+          </div>
+          <h3>收藏与同步</h3>
+          <p>本地书架 + 云端同步，阅读进度、收藏、历史记录多设备无缝衔接。</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon" style="--c:#f43f5e">
+            <svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 8.2 7 9 4-.8 7-4.6 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>隐私与安全</h3>
+          <p>应用锁、无痕模式、本地数据加密，阅读记录只属于你自己。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 界面预览 ============ -->
+  <section class="section section--alt" id="preview">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">PREVIEW</span>
+        <h2 class="section__title">界面预览</h2>
+        <p class="section__desc">简洁、克制、不打扰。把所有注意力留给漫画本身。</p>
+      </div>
+
+      <div class="shots reveal">
+        <figure class="shot">
+          <div class="shot__screen shot__screen--home">
+            <span class="sk sk--title"></span>
+            <div class="sk-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <figcaption>首页推荐</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__screen shot__screen--read">
+            <span class="sk sk--page"></span>
+            <span class="sk sk--page"></span>
+          </div>
+          <figcaption>阅读界面</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot__screen shot__screen--shelf">
+            <span class="sk sk--title"></span>
+            <span class="sk sk--row"></span>
+            <span class="sk sk--row"></span>
+            <span class="sk sk--row"></span>
+          </div>
+          <figcaption>我的书架</figcaption>
+        </figure>
+      </div>
+
+      <p class="shots__note">* 示意图，实际界面以安装后的版本为准。</p>
+    </div>
+  </section>
+
+  <!-- ============ 更新日志 ============ -->
+  <section class="section" id="changelog">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">CHANGELOG</span>
+        <h2 class="section__title">更新日志</h2>
+        <p class="section__desc">每一次迭代都记录在案。点击版本卡片可展开完整说明。</p>
+      </div>
+
+      <div class="cl__filter reveal" id="clFilter">
+        <button class="chip is-active" data-filter="all">全部</button>
+        <button class="chip" data-filter="feature">新增</button>
+        <button class="chip" data-filter="improve">优化</button>
+        <button class="chip" data-filter="fix">修复</button>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <!-- 由 assets/js/main.js 依据 config.js 渲染 -->
+      </div>
+
+      <div class="cl__more">
+        <button class="btn btn--ghost" id="clMore">加载更早的版本</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 常见问题 ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <span class="section__tag">FAQ</span>
+        <h2 class="section__title">常见问题</h2>
+      </div>
+
+      <div class="faq" id="faqList">
+        <details class="faq__item reveal">
+          <summary>如何安装？</summary>
+          <div class="faq__body">
+            <p>Android：下载 APK 后允许「安装未知来源应用」即可安装。iOS：通过 TestFlight 或自签工具安装。Windows：下载压缩包解压后直接运行。</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>为什么杀毒软件会报警？</summary>
+          <div class="faq__body">
+            <p>部分安全软件对非应用商店分发的 APK 会做保守拦截，属于常见误报。请核对本站提供的文件校验值（SHA-256）后再决定是否安装。</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>如何更新到新版本？</summary>
+          <div class="faq__body">
+            <p>应用内「设置 → 检查更新」可直接升级；也可以在本页下载最新安装包覆盖安装，本地书架与阅读记录不会丢失。</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>旧版本还能用吗？</summary>
+          <div class="faq__body">
+            <p>可以。但旧版本可能无法连接最新的接口，建议保持在最近两三个版本内。历史版本可在更新日志中展开对应版本查看。</p>
+          </div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>数据会上传到服务器吗？</summary>
+          <div class="faq__body">
+            <p>收藏、进度等数据默认仅保存在本地；仅在你主动开启云同步时才会加密上传。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 下载 CTA ============ -->
+  <section class="cta">
+    <div class="container cta__inner reveal">
+      <h2>准备好开始了吗？</h2>
+      <p>下载最新版本 <b data-version>v0.0.0</b>，几秒钟后就能翻开第一页。</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" data-dl="android" href="#">下载 Android 版</a>
+        <a class="btn btn--ghost btn--lg" href="#changelog">查看更新日志</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 免责声明 ============ -->
+  <section class="disclaimer">
+    <div class="container container--narrow">
+      <h3>免责声明</h3>
+      <p>
+        本站仅提供客户端软件的下载与版本信息，不存储、不制作、不传播任何漫画内容。
+        所有内容均来自第三方网络，版权归原作者及原出版方所有。
+        本软件仅供个人学习与技术交流使用，请于下载后 24 小时内删除。
+        若您认为相关内容侵犯了您的合法权益，请联系我们处理。
+      </p>
+      <p class="disclaimer__age"><b>本软件包含成人向内容，未满 18 周岁请勿下载使用。</b></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M6 8h13a5 5 0 0 1 0 10H9l-3 6V8Z"/>
+          <circle cx="23" cy="21" r="3.2"/>
+        </svg>
+      </span>
+      <div>
+        <b>哔咔漫画 PicACG</b>
+        <small>© <span data-year>2026</span> 哔咔漫画 · 保留所有权利</small>
+      </div>
+    </div>
+
+    <nav class="footer__links">
+      <a href="#features">功能特色</a>
+      <a href="#download">下载</a>
+      <a href="#changelog">更新日志</a>
+      <a href="#faq">常见问题</a>
+      <a data-link="repo" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a data-link="issues" href="#" target="_blank" rel="noopener">反馈问题</a>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <span>Version <b data-version>v0.0.0</b> · Build <b data-build>—</b></span>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="返回顶部">↑</button>
+
+<!-- 站点配置与更新日志数据：后期维护只需改这两个文件 -->
+<script src="assets/js/config.js"></script>
+<script src="assets/js/changelog.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

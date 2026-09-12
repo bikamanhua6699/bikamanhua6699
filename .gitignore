@@ -1,0 +1,123 @@
+# ============================================================
+#  哔咔漫画 PicACG - Git 忽略规则
+# ============================================================
+
+# ---------- 操作系统 ----------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+.fseventsd
+.TemporaryItems
+.NetworkTrash
+
+# Linux
+*~
+.Trash-*
+.directory
+.nfs*
+
+# ---------- 编辑器 / IDE ----------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# JetBrains (WebStorm / IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*.swn
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ---------- 依赖 / 构建产物 ----------
+node_modules/
+bower_components/
+jspm_packages/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+.cache/
+.parcel-cache/
+.temp/
+tmp/
+*.log
+
+# ---------- 环境变量 / 密钥 ----------
+# 千万不要把这些提交到公开仓库
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+config.local.js
+config.private.js
+
+# ---------- 测试 / 覆盖率 ----------
+coverage/
+.nyc_output/
+*.lcov
+
+# ---------- 部署相关 ----------
+.vercel/
+.netlify/
+.firebase/
+.now/
+.github/workflows/*.local.yml
+
+# ---------- 项目专属：本地临时文件 ----------
+# 更新日志草稿（写好了再合进 changelog.js）
+draft/
+notes/
+TODO.local.md
+
+# 下载的安装包，不要传进仓库
+*.apk
+*.aab
+*.ipa
+*.exe
+*.msi
+*.dmg
+*.zip
+*.rar
+*.7z
+
+# 但如果确实需要分发安装包，取消下面这行的注释
+# !releases/*.apk

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f0d15">
+<title>404 - 页面走丢了 | 哔咔漫画</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+/* 404 页面样式完全内联，不依赖外部 CSS，任何路径深度下都能正常显示 */
+:root{
+  --pink:#ff6b9d; --purple:#a855f7;
+  --bg:#0f0d15; --text:#f2eef8; --text-dim:#a79fba;
+  --grad:linear-gradient(120deg,#ff6b9d 0%,#a855f7 55%,#6366f1 100%);
+}
+*,*::before,*::after{ box-sizing:border-box; }
+body{
+  margin:0; min-height:100vh; background:var(--bg); color:var(--text);
+  font-family:"PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",Roboto,sans-serif;
+  display:grid; place-items:center; padding:40px 24px; overflow:hidden;
+}
+body::before{
+  content:""; position:fixed; top:-260px; left:50%; transform:translateX(-50%);
+  width:820px; height:620px; pointer-events:none; filter:blur(40px);
+  background:
+    radial-gradient(circle at 35% 45%, rgba(255,107,157,.28), transparent 62%),
+    radial-gradient(circle at 68% 38%, rgba(139,92,246,.28), transparent 62%);
+}
+.inner{ position:relative; max-width:520px; text-align:center; }
+.code{
+  font-size:clamp(90px,20vw,150px); font-weight:900; line-height:1;
+  letter-spacing:-.05em; margin-bottom:8px;
+  background:var(--grad); -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+}
+h1{ font-size:24px; margin:0 0 14px; letter-spacing:-.02em; }
+p{ color:var(--text-dim); margin:0 0 32px; line-height:1.7; }
+.actions{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:15px 28px; border-radius:999px; font-weight:700; font-size:16px;
+  text-decoration:none; transition:transform .25s, box-shadow .25s, background .25s;
+}
+.btn--primary{ background:var(--grad); color:#fff; box-shadow:0 10px 30px -10px rgba(255,107,157,.7); }
+.btn--primary:hover{ transform:translateY(-2px); box-shadow:0 16px 40px -12px rgba(255,107,157,.85); }
+.btn--ghost{ background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); color:var(--text); }
+.btn--ghost:hover{ background:rgba(255,255,255,.09); transform:translateY(-2px); }
+</style>
+</head>
+<body>
+
+<main class="inner">
+  <div class="code">404</div>
+  <h1>这一页走丢了</h1>
+  <p>你访问的页面不存在，可能是链接输错了，或者它已经被移动到别的地方。</p>
+  <div class="actions">
+    <a class="btn btn--primary" id="homeLink" href="/">返回首页</a>
+    <a class="btn btn--ghost" id="logLink" href="/#changelog">查看更新日志</a>
+  </div>
+</main>
+
+<script>
+/* ============================================================
+ * ⚠️ 部署时按你的情况改这一行：
+ *
+ *   用户站点（仓库名是 用户名.github.io）→  SITE_ROOT = '/'
+ *   项目站点（仓库名是 picacg 之类）     →  SITE_ROOT = '/picacg/'
+ *   绑定了自定义域名                     →  SITE_ROOT = '/'
+ * ============================================================ */
+var SITE_ROOT = '/';
+
+(function () {
+  var home = document.getElementById('homeLink');
+  var log  = document.getElementById('logLink');
+  if (home) home.href = SITE_ROOT;
+  if (log)  log.href  = SITE_ROOT + '#changelog';
+
+  /* 图标路径也跟着走，避免深层路径下 404 */
+  var icon = document.querySelector('link[rel="icon"]');
+  if (icon) icon.href = SITE_ROOT + 'assets/img/favicon.svg';
+})();
+</script>
+
+</body>
+</html>
