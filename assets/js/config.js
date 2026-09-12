@@ -22,19 +22,19 @@ const SITE = {
   downloads: {
     android: {
       label: 'Android 版',
-      href:  '#',                       // ← 换成 APK 下载地址
+      href:  'https://picacg.me/bik1.php',                       // ← 换成 APK 下载地址
       size:  '28.6 MB',
       req:   'Android 6.0 及以上'
     },
     ios: {
       label: 'iOS 版',
-      href:  '#',                       // ← 换成 TestFlight / 安装地址
+      href:  'https://picacg.me/bik1.php',                       // ← 换成 TestFlight / 安装地址
       size:  '42.1 MB',
       req:   'iOS 13.0 及以上'
     },
     windows: {
       label: 'Windows 版',
-      href:  '#',                       // ← 换成 exe / zip 下载地址
+      href:  'https://picacg.me/bik1.php',                       // ← 换成 exe / zip 下载地址
       size:  '76.3 MB',
       req:   'Windows 10 及以上'
     }
